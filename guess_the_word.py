@@ -2,6 +2,8 @@
 # CIS256 Spring 2025
 # EX 4
 
+import random
+
 word_list = ["hard",
 "pony",
 "sin",
@@ -22,6 +24,9 @@ word_list = ["hard",
 "fee",
 "ferry",
 "carve"]
+
+def select_random_word():
+    return random.choice(word_list)
 
 def game():
     attempts_remaining = 10
