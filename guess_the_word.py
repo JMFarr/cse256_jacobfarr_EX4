@@ -2,6 +2,27 @@
 # CIS256 Spring 2025
 # EX 4
 
+word_list = ["hard",
+"pony",
+"sin",
+"sensitive",
+"survivor",
+"patience",
+"overeat",
+"request",
+"leak",
+"civilian",
+"execution",
+"create",
+"tank",
+"harass",
+"incident",
+"tower",
+"vote",
+"fee",
+"ferry",
+"carve"]
+
 def game():
     attempts_remaining = 10
     current_letter = 0
