@@ -38,6 +38,7 @@ def game():
     incorrect_guesses = set()
     while (current_letter < len(word_to_guess)) and (attempts_remaining > 0):
         guess = input("Guess a letter: ")
+        print()
         if check_guess(guess, word_to_guess, current_letter):
             current_letter += 1
             incorrect_guesses = set()
@@ -46,8 +47,10 @@ def game():
             attempts_remaining -= 1
             incorrect_guesses.add(guess.lower())
             print(f"WRONG. {attempts_remaining} attempts remaining.")
-        print(f"Word: {word_to_guess[:current_letter]}{"".join(["_" for _ in range(len(word_to_guess) - current_letter)])}")
-        print(f"Incorrect Guesses: {", ".join(incorrect_guesses)}")
+        
+        print(f"\nWord: {word_to_guess[:current_letter]}{"".join(["_" for _ in range(len(word_to_guess) - current_letter)])}")
+        print(f"Incorrect Guesses: {", ".join(incorrect_guesses)}\n")
+
     if current_letter == len(word_to_guess):
         print("Congratulations! You won!")
     else:
