@@ -72,4 +72,4 @@ def game():
         print("You lost... Better luck next time.")
 
 if __name__ == "__main__":
-    game()
+    game()  # Starts the game
