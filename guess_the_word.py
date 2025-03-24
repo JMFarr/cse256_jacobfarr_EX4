@@ -4,6 +4,7 @@
 
 import random
 
+# Word list to be randomly selected from
 word_list = ["hard",
 "pony",
 "sin",
@@ -25,9 +26,12 @@ word_list = ["hard",
 "ferry",
 "carve"]
 
+# Function which randomly selects a word from the list.
 def select_random_word():
     return random.choice(word_list)
 
+# Function which returns true if the guess matches the current
+# letter, or false if it does not. Comparison is case-insensitive
 def check_guess(guess, word, index):
     return guess.lower() == word[index].lower()
 
