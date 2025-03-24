@@ -34,7 +34,7 @@ def check_guess(guess, word, index):
 def game():
     attempts_remaining = 10
     current_letter = 0
-    word_to_guess = "testing"
+    word_to_guess = select_random_word()
     incorrect_guesses = set()
     while (current_letter < len(word_to_guess)) and (attempts_remaining > 0):
         guess = input("Guess a letter: ")
