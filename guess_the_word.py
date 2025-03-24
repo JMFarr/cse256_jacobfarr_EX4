@@ -37,7 +37,7 @@ def check_guess(guess, word, index):
 
 # Function containing core game logic.
 def game():
-    word_to_guess = "testing"  # The word user needs to guess
+    word_to_guess = select_random_word()  # The word user needs to guess
     current_letter = 0  # Index of current letter for guess comparison
     incorrect_guesses = set()  # A Set which holds wrong guesses for the current letter.
     attempts_remaining = 10  # Tracks the remaining number of wrong guesses allowed.
