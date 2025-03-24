@@ -42,6 +42,7 @@ def game():
     incorrect_guesses = set()  # A Set which holds wrong guesses for the current letter.
     attempts_remaining = 10  # Tracks the remaining number of wrong guesses allowed.
     
+    # Preview of word which shows how many letters the word has.
     print(f"\nWord: {"".join(["_" for _ in word_to_guess])}\n")
 
     # Main game loop. Game continues until the words has been guess in
