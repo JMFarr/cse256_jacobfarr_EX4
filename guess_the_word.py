@@ -42,6 +42,8 @@ def game():
     incorrect_guesses = set()  # A Set which holds wrong guesses for the current letter.
     attempts_remaining = 10  # Tracks the remaining number of wrong guesses allowed.
     
+    print(f"\nWord: {"".join(["_" for _ in word_to_guess])}\n")
+
     # Main game loop. Game continues until the words has been guess in
     # its entirety, or allowed attempts have run out.
     while (current_letter < len(word_to_guess)) and (attempts_remaining > 0):
