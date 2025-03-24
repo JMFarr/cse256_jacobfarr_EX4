@@ -52,3 +52,6 @@ def game():
         print("Congratulations! You won!")
     else:
         print("You lost... Better luck next time.")
+
+if __name__ == "__main__":
+    game()
